@@ -6,7 +6,7 @@ export default function App() {
   return(
       <SafeAreaProvider>
           <SafeAreaView style={{ flex:1, justifyContent: "center", padding: 20 }}>
-              <ProfileCard/>
+              <ProfileCard firstName={"Amy"} lastName={"Kim"} language={"Python"}/>
           </SafeAreaView>
       </SafeAreaProvider>
     );

@@ -2,7 +2,8 @@ import {Text, View, TouchableOpacity, Image} from "react-native";
 import { s } from "./ProfileCard.style";
 import { FontAwesome } from '@expo/vector-icons';
 
-export function ProfileCard() {
+export function ProfileCard(props) {
+    console.log(props)
   return (
       <>
           <View style={s.container}>
@@ -11,8 +12,8 @@ export function ProfileCard() {
                       <Image style={s.avatar} source={{uri: "https://i.pravatar.cc/300?img=31"}}/>
                   </View>
                   <View style={s.texts}>
-                      <Text style={s.name}>Young Song</Text>
-                      <Text>Hi I'm React native developer, Let's get in touch</Text>
+                      <Text style={s.name}>{props.firstName} {props.lastName}</Text>
+                      <Text>Hi I'm {props.language} developer, Let's get in touch</Text>
                   </View>
               </View>
               <View style={s.social}>
