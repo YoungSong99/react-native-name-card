@@ -3,8 +3,8 @@
     "name": "react-native-intro",
     "slug": "react-native-intro",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "orientation": "portrait", //portrait or landscape
+    "icon": "./assets/icon.png", // icon for app: 96x96
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
