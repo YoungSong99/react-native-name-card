@@ -2,6 +2,7 @@ import { StyleSheet } from "react-native";
 
 export const s = StyleSheet.create({
     container: {
+        borderRadius: 10,
         padding: 20,
         backgroundColor: "white",
         elevation: 8,
@@ -37,8 +38,17 @@ export const s = StyleSheet.create({
 
     social: {
         flexDirection: "row",
-        justifyContent: "space-between",
+        justifyContent: "space-evenly",
         padding: 10,
+    },
+
+    socialBtn: {
+        height: 45,
+        width: 45,
+        borderRadius: 50,
+        backgroundColor: "#f2f2f2",
+        alignItems: "center",
+        justifyContent: "center",
     },
 
 });
